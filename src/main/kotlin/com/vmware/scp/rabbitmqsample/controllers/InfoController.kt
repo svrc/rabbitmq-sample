@@ -16,7 +16,7 @@ class InfoController(private val rabbitMQClient: RabbitMQClient) {
     @Throws(Exception::class)
     fun mainPage(model: Model): String {
         try {
-            val message = "Generated message: " + UUID.randomUUID().toString()
+            val message = "New Generated message: " + UUID.randomUUID().toString()
             rabbitMQClient.send(message)
             val receivedMessage: String = rabbitMQClient.receive()
 
