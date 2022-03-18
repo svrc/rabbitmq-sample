@@ -12,9 +12,9 @@ spec:
     ref:
       apiVersion: rabbitmq.com/v1beta1
       kind: RabbitmqCluster
-      name: rmq-1
+      name: sample-rabbitmq-app-cluster
   source:
     git:
       ref:
         branch: main
-      url: https://github.com/gmrodgers/rabbitmq-sample
+      url: https://github.com/svrc/rabbitmq-sample
